@@ -11,4 +11,4 @@ cloud-fields: site.data.theme.subjects-fields
 ## Themen durchsuchen
 
 Verwenden Sie diese Wortwolken-Visualisierung, um Begriffe und Themen zu durchsuchen.
-Die Wortgröße wird durch die Häufigkeit bestimmt und alle Wörter sind mit einer entsprechenden Sammlungssuche verlinkt.
+Die Wortgrösse wird durch die Häufigkeit bestimmt und alle Wörter sind mit einer entsprechenden Sammlungssuche verlinkt.

@@ -7,74 +7,74 @@
 {% assign audiosample = site.data[site.metadata] | where_exp: 'item','item.format contains "audio"' | first %}
 {% capture audiosampleid %}{{audiosample.objectid | default: "https://www.lib.uidaho.edu/digital/mp3s/Clouds.mp3"}}{% endcapture %}
 
-## About the About Page
+## Über die Über-Seite
 
-We want to make engaging interpretive pages easier to create, so CollectionBuilder gives you tools to write *with* your collection content!
+Wir möchten die Erstellung ansprechender Interpretations-Seiten vereinfachen. CollectionBuilder gibt Ihnen daher Werkzeuge an die Hand, mit denen Sie *mit* Ihren Sammlungsinhalten schreiben können!
 
-The template comes with a customizable "About" page layout designed for long form content with rich media embeds.
-Content is written in [Markdown](https://guides.github.com/features/mastering-markdown/) and enhanced using "includes" that pull in collection content, external media, and [Bootstrap](https://getbootstrap.com/) features like cards and modals.
-We hope this makes it easier for site builders to develop the collection AND add interesting and engaging contextual information. 
+Die Vorlage enthält ein anpassbares Layout für die Seite "Über", das für lange Inhalte mit Rich-Media-Einbettungen konzipiert ist.
+Die Inhalte werden in [Markdown](https://guides.github.com/features/mastering-markdown/) geschrieben und mit "Includes" erweitert, die Sammlungsinhalte, externe Medien und [Bootstrap](https://getbootstrap.com/) Funktionen wie Karten und Modals einbinden.
+Wir hoffen, dass dies die Entwicklung der Sammlung UND das Hinzufügen interessanter und ansprechender Kontextinformationen für Website-Ersteller erleichtert. 
 
-Each "include" file has several options, which are documented in the files themselves--copy the examples to see how it works with your content! 
-In the demo below, we've given display widths of 25% and 50% to save space, but you can feature the entire image or document.
+Jede "Include"-Datei hat mehrere Optionen, die in den Dateien selbst dokumentiert sind - kopieren Sie die Beispiele, um zu sehen, wie es mit Ihren Inhalten funktioniert! 
+In der Demo unten haben wir die Anzeigebreiten auf 25% und 50% festgelegt, um Platz zu sparen, aber Sie können das gesamte Bild oder Dokument einbinden.
 
-You can also see a page featuring [a bonanza of feature includes options](https://collectionbuilder.github.io/collectionbuilder-gh/feature_options.html) on our CollectionBuilder-GH demo site. 
+Auf unserer CollectionBuilder-GH-Demoseite sehen Sie auch eine Seite mit [einer Fülle von Feature-Include-Optionen] (https://collectionbuilder.github.io/collectionbuilder-gh/feature_options.html). 
 
-{% include feature/button.html text="Feature *Includes* Bonanza page" link="https://collectionbuilder.github.io/collectionbuilder-gh/feature_options.html" color="primary" size="lg" centered=true %}
+{% include feature/button.html text="Feature *Includes* Bonanza-Seite" link="https://collectionbuilder.github.io/collectionbuilder-gh/feature_options.html" color="primary" size="lg" centered=true %}
 
-### Include Collection Items
+### Sammlungselemente einbeziehen
 
-The template provides includes to pull your collection objects and metadata into your interpretive page, allowing you to write with your materials directly embedded in the content.
+Die Vorlage bietet Includes, mit denen Sie Ihre Sammlungsobjekte und Metadaten in Ihre Interpretationsseite einbinden können. So können Sie Ihre Materialien direkt in den Inhalt einbetten.
 
-#### Include an Image
+#### Ein Bild einbinden
 
-- Image --> `{% raw %}{% include feature/image.html objectid="demo_001" width="75" %}{% endraw %}`
+- Bild --> `{% raw %}{% include feature/image.html objectid="demo_001" width="75" %}{% endraw %}`
 
 {% include feature/image.html objectid=imagesampleid width="75" %}
 
-#### Include a PDF
+#### Eine PDF einbinden
 
-- PDF -- > `{% raw %}{% include feature/pdf.html objectid="demo_002"  width="50" %}{% endraw %}`
+- PDF -- > `{% raw %}{% include feature/pdf.html objectid="demo_002" width="50" %}{% endraw %}`
 
 {% include feature/pdf.html objectid=pdfsampleid width="50" %}
 
-#### Include a Video
+#### Ein Video einbinden
 
 - Video: `{% raw %}{% include feature/video.html objectid="demo_004" %}{% endraw %}`
 
 {% include feature/video.html objectid=videosampleid width="75" %}
 
-#### Include an Audio File
+#### Eine Audiodatei einbinden
 
 - Audio: `{% raw %}{% include feature/audio.html objectid="demo_003" %}{% endraw %}`
 
-{% include feature/audio.html objectid=audiosampleid  %}
+{% include feature/audio.html objectid=audiosampleid %}
 
-### Include Bootstrap Features
+### Bootstrap-Funktionen einbinden
 
-The template also provides includes to make it easier to add [Bootstrap](https://getbootstrap.com/) components to your Markdown writing.
-These features allow you to better organize and highlight your content.
+Die Vorlage enthält auch Includes, die das Hinzufügen von [Bootstrap](https://getbootstrap.com/) Komponenten zu Ihrem Markdown-Text erleichtern.
+Mit diesen Funktionen können Sie Ihre Inhalte besser organisieren und hervorheben.
 
-#### Include a Card
+#### Eine Karte einbinden
 
-- Card -- > `{% raw %}{% include feature/card.html header="This is a Card" text="The card features an image from the collection as a cap" objectid="demo004" width="25" centered=true %}{% endraw %}`
+- Karte -- > `{% raw %}{% include feature/card.html header="Dies ist eine Karte" text="Die Karte zeigt ein Bild aus der Sammlung als Cap" objectid="demo004" width="25" centered=true %}{% endraw %}`
 
-{% include feature/card.html header="This is a Card" text="The card features an image from the collection as a cap" objectid="demo_001" width="25" centered=true %}
+{% include feature/card.html header="Dies ist eine Karte" text="Die Karte zeigt ein Bild aus der Sammlung als Kappe" objectid="demo_001" width="25" centered=true %}
 
-#### Include a Button 
+#### Eine Schaltfläche einfügen 
 
-- Buttons -- > `{% raw %}{% include feature/button.html text="Button Link to Somewhere" link="https://collectionbuilder.github.io/" color="success" %}{% endraw %}`
+- Schaltflächen -- > `{% raw %}{% include feature/button.html text="Schaltfläche Link zu Irgendwo" link="https://collectionbuilder.github.io/" color="success" %}{% endraw %}`
 
-{% include feature/button.html text="Button Link to Somewhere" link="https://collectionbuilder.github.io/" color="success" centered=true %}
+{% include feature/button.html text="Schaltfläche Link zu Irgendwo" link="https://collectionbuilder.github.io/" color="success" centered=true %}
   
-#### Include an Alert
+#### Eine Warnung einbinden
 
-- Alerts -- > `{% raw %}{% include feature/alert.html text="this is an *alert* that 'warns' a user" color="warning" align="center" %}{% endraw %}`
+- Warnungen -- > `{% raw %}{% include feature/alert.html text="dies ist eine *Warnung*, die einen Benutzer 'warnt'" color="warning" align="center" %}{% endraw %}`
 
-{% include feature/alert.html text="This is an *alert* that 'warns' a user with centrally aligned text." color="warning" align="center"  %}
+{% include feature/alert.html text="Dies ist eine *Warnung*, die einen Benutzer mit zentral ausgerichtetem Text 'warnt'." color="warning" align="center" %}
 
-#### Include a Modal
+#### Ein Modal einbinden
 
-- Modals -- > `{% raw %}{% include feature/modal.html button="This is a modal using a 'primary' colored button to invite clicking" title="when clicked:" text="A Modal will pop out a box with some more information" color="primary"  %}{% endraw %}`
+- Modals -- > `{% raw %}{% include feature/modal.html button="Dies ist ein Modal, das eine 'primäre' farbige Schaltfläche verwendet, um zum Anklicken aufzufordern" title="wenn angeklickt:" text="Ein Modal öffnet ein Feld mit weiteren Informationen" color="primary" %}{% endraw %}`
 
-{% include feature/modal.html button="This is a modal using a 'primary' colored button to invite clicking" title="When clicked:" text="A Modal will pop out a box with some more information" color="primary"  %} 
+{% include feature/modal.html button="Dies ist ein Modal mit einer 'primären' farbigen Schaltfläche, die zum Klicken einlädt" title="Beim Anklicken:" text="Ein Modal öffnet ein Feld mit weiteren Informationen" color="primär" %} 
