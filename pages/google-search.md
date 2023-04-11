@@ -9,7 +9,7 @@ permalink: /search/google.html
 ## Google Site Search
 
 <div class="alert alert-primary" role="alert">
-  Please note: CSE is a free service provided by Google. Results depend on third party indexing and may contain ads.
+  Bitte beachten Sie: CSE ist ein kostenloser Service von Google. Die Ergebnisse hängen von der Indexierung durch Dritte ab und können Werbung enthalten.
 </div>
 
 <script>
@@ -19,7 +19,7 @@ permalink: /search/google.html
     gcse.type = 'text/javascript';
     gcse.async = true;
     gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
+    var s = document.getElementsByTagName['script'](0);
     s.parentNode.insertBefore(gcse, s);
   })();
 </script>

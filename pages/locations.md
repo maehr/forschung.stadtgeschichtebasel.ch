@@ -1,5 +1,5 @@
 ---
-title: Locations
+title: Orte
 layout: cloud
 permalink: /locations.html
 # Default locations page is configured in "_data/theme.yml"
@@ -8,7 +8,7 @@ permalink: /locations.html
 cloud-fields: site.data.theme.locations-fields
 ---
 
-## Browse Locations
+## Orte durchsuchen
 
-Use this word cloud visualization to browse locations.
-Word size is determined by frequency and all words link to a corresponding collection search.
+Verwenden Sie diese Wortwolken-Visualisierung, um Orte zu durchsuchen.
+Die Wortgröße wird durch die Häufigkeit bestimmt und alle Wörter sind mit einer entsprechenden Sammlungssuche verlinkt.
