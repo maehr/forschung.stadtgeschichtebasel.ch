@@ -1,3 +1,3 @@
-# CollectionBuilder Documentation
+# CollectionBuilder Dokumentation
 
-Please visit CB-Docs for full documentation: <https://collectionbuilder.github.io/cb-docs/>
+Bitte besuchen Sie CB-Docs für die vollständige Dokumentation: <https://collectionbuilder.github.io/cb-docs/>
