@@ -83,7 +83,7 @@ bootswatch: # leave blank or comment out for plain bootstrap
 text-color: "#000000"
 link-color: "#004488"
 base-font-family: "Euclid Circular B" # comment out for bootstrap defaults. e.g. Roboto
-font-cdn: <style>@font-face {font-family:"Euclid Circular B";src:url("assets/fonts/EuclidCircularB-Regular.woff2") format("woff2"),url("assets/fonts/EuclidCircularB-Regular.woff") format("woff"),url("assets/fonts/EuclidCircularB-Regular.otf") format("opentype");font-style:normal;font-weight:400;}</style>
+font-cdn: # add font stylesheet, e.g. <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
 # THEME ICONS [optional!]
 # cb-gh uses Bootstrap Icons, https://icons.getbootstrap.com/
