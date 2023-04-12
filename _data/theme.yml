@@ -81,7 +81,7 @@ bootswatch: # leave blank or comment out for plain bootstrap
 
 # THEME FONTS
 text-color: "#000000"
-link-color: "#004488"
+link-color: "#0077BB"
 base-font-family: "Euclid Circular B" # comment out for bootstrap defaults. e.g. Roboto
 font-cdn: # add font stylesheet, e.g. <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
